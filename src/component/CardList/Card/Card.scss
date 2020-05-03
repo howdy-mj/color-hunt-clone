@@ -1,0 +1,71 @@
+.Card {
+    display: inline-block;
+    width: 240px;
+    height: 287px;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 6px;
+
+    .palettes {
+        height: 220px;
+        width: 220px;
+        margin: 5px auto;
+        border-radius: 5px;
+        
+        div {
+            position: relative;  
+            border-top-left-radius: 4px;  
+            border-top-right-radius: 4px;  
+        }
+        .one {
+            height: 90.10px;
+            z-index: 5;
+            top: 0;
+        }
+        .two {
+            height: 147.39px;
+            z-index: 4;
+            top: -90.1px;
+        }
+        .three {
+            height: 187px;
+            z-index: 3;
+            top: -237.49px;
+        }
+        .four {
+            height: 220px;
+            z-index: 2;
+            top: -424.49px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }   
+    }
+
+    .otherInfo {
+        display: flex;
+        justify-content: space-between;
+        
+        margin: 25px 10px 0px 10px;
+        
+        .like {
+            width: 38.78px;
+            height: 35px;
+            display: flex;
+
+            img {
+                height: 12px;
+                width: 15px;
+                margin-right: 10px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .date {
+            font-size: 12px;
+            color: #899bb4;
+            // position: absolute;
+        }
+        
+    }
+}
