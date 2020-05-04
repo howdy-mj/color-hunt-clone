@@ -49,6 +49,7 @@ class Nav extends Component {
             </div>
           </div>
         </div>
+        <div className="more">•••</div>
       </div>
     );
   }

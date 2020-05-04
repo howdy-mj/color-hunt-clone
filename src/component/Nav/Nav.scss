@@ -5,7 +5,7 @@ $fontColor: #263646;
   height: 50px;
   position: fixed;
   background-color: white;
-  z-index: 1000;
+  z-index: 100;
 
   .navContainer {
     display: flex;
@@ -97,5 +97,13 @@ $fontColor: #263646;
         }
       }
     }
+  }
+  .more {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #bccddf;
+    font-size: 23px;
+    letter-spacing: 2px;
   }
 }
