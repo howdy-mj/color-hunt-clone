@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import Nav from "./component/Nav/Nav";
 import CardList from "./component/CardList/CardList";
 import "./App.css";
@@ -31,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

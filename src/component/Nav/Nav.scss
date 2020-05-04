@@ -5,6 +5,7 @@ $fontColor: #263646;
   height: 50px;
   position: fixed;
   background-color: white;
+  z-index: 1000;
 
   .navContainer {
     display: flex;

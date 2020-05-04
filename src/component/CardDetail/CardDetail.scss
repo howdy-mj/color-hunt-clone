@@ -1,0 +1,14 @@
+.CardDetail {
+  padding-top: 50px;
+  height: 100vh;
+  background-color: #f6f8fa;
+
+  .Card {
+    width: calc(100% - 32px);
+
+    .palettes {
+      width: calc(100% - 32px);
+      margin: 10px auto;
+    }
+  }
+}
