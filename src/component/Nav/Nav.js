@@ -40,7 +40,7 @@ class Nav extends Component {
               />
             </div>
             <div className='sortDetail'>
-              <ul className={`detailCategory ${show ? "show" : ""}`}>
+              <ul className={`detailCategory shadow ${show ? "show" : ""}`}>
                 <li>New</li>
                 <li>Trendy</li>
                 <li>Popular</li>

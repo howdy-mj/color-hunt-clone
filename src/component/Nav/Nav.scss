@@ -78,19 +78,26 @@ $fontColor: #263646;
           padding: 0 10px;
           list-style: none;
           background-color: white;
-
           border-radius: 6px;
-
           animation-name: drop;
           animation-duration: 0.2s;
+          transform-origin: top;
 
-          border: 1px solid green;
-          // border-top: 1px solid #e9f2f9;
+          @keyframes drop {
+            0% {
+              transform: scaleY(0.5);
+              opacity: 0;
+            }
+          }
           li {
             font-size: 14px;
             line-height: 35px;
             cursor: pointer;
           }
+        }
+        .shadow {
+          box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+          transition: box-shadow 0.3s;
         }
         .show {
           display: block;
