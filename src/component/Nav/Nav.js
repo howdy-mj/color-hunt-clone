@@ -19,7 +19,7 @@ class Nav extends Component {
     return (
       <div className='Nav'>
         <div className='navContainer'>
-          <Link to='/'>
+          <Link to='/colors'>
             <div className='title'>
               <img
                 alt=''
