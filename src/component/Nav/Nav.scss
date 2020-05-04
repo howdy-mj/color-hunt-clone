@@ -1,102 +1,100 @@
 $fontColor: #263646;
 
 .Nav {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: white;
 
-    .navContainer {
-        display: flex;
+  .navContainer {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    align-items: center;
+
+    .title {
+      display: flex;
+      padding-right: 4px;
+      cursor: pointer;
+      img {
         position: absolute;
-        top: 14px;
-        align-items: center;
-        
-        .title {
-            display: flex;
-            padding-right: 4px;
-            cursor: pointer;
-            img {
-                position: absolute;
-                left: 12px;
-                top: -2px;
-                width: 28px;
-                height: 29px;
-                background-size: contain;
-                border: 0;
-            }
-            .name {
-                padding-left: 50px;
-                font-size: 14px;
-                color: $fontColor;
-            }
-        }
-
-        .right {
-            display: flex;
-            align-items: center;
-            
-            .topCategory {
-                span {
-                    padding: 0 4px;
-                    font-size: 12px;
-                    color: $fontColor;
-                    cursor: pointer;
-                }
-                span::after {
-                    content: ">";
-                    color: #899bb4;
-                    padding-left: 4px;
-                    font-size: 3px;
-                }
-            }
-            .sort {
-                font-size: 12px;
-                padding: 0 4px;
-                margin-top: 2px;
-                cursor: pointer;
-                span {
-                    margin-right: 4px;
-                    color: $fontColor;
-                }
-                img {
-                    width: 12px;
-                    margin-left: 3px;
-                }
-
-            }
-            .sortDetail{
-                padding-left: 50px;
-                
-                .detailCategory {
-                    display: none;
-                    position: absolute;
-                    width: 140px;
-                    height: 144px;
-                    top: 37px;
-                    padding: 0 10px;
-                    list-style: none;
-                    background-color: white;    
-                    
-                    border-radius: 6px;
-                    
-                    animation-name: drop;
-                    animation-duration: .2s;
-
-                    border: 1px solid green;
-                    // border-top: 1px solid #e9f2f9;
-                    li {
-                        font-size: 14px;
-                        line-height: 35px;
-                        cursor: pointer;
-                    }
-                }
-                .show {
-                    display: block;
-                }
-                
-            }
-            
-        }
+        left: 12px;
+        top: -2px;
+        width: 28px;
+        height: 29px;
+        background-size: contain;
+        border: 0;
+      }
+      .name {
+        padding-left: 50px;
+        font-size: 14px;
+        color: $fontColor;
+      }
     }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .topCategory {
+        span {
+          padding: 0 4px;
+          font-size: 12px;
+          color: $fontColor;
+          cursor: pointer;
+        }
+        span::after {
+          content: ">";
+          color: #899bb4;
+          padding-left: 4px;
+          font-size: 3px;
+        }
+      }
+      .sort {
+        font-size: 12px;
+        padding: 0 4px;
+        margin-top: 2px;
+        cursor: pointer;
+        span {
+          margin-right: 4px;
+          color: $fontColor;
+        }
+        img {
+          width: 12px;
+          margin-left: 3px;
+        }
+      }
+      .sortDetail {
+        padding-left: 50px;
+        z-index: 100;
+
+        .detailCategory {
+          display: none;
+          position: absolute;
+          width: 140px;
+          height: 144px;
+          top: 37px;
+          padding: 0 10px;
+          list-style: none;
+          background-color: white;
+
+          border-radius: 6px;
+
+          animation-name: drop;
+          animation-duration: 0.2s;
+
+          border: 1px solid green;
+          // border-top: 1px solid #e9f2f9;
+          li {
+            font-size: 14px;
+            line-height: 35px;
+            cursor: pointer;
+          }
+        }
+        .show {
+          display: block;
+        }
+      }
+    }
+  }
 }

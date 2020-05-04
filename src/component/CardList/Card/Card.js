@@ -4,11 +4,10 @@ import "./Card.scss";
 class Card extends Component {
   render() {
     const { info } = this.props;
-    console.log("info", info);
+    // console.log("info", info);
     return (
       <>
-        {info.map((one, index) => {
-          console.log("one.set[0]", one.set[0]);
+        {info && info.map((one, index) => {
           return (
             <div className='Card' key={index}>
               <div className='palettes'>

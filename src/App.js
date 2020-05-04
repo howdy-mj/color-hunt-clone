@@ -7,40 +7,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sampleColor: {
-        data: [
-          {
-            id: 1,
-            set: ["#f8f3eb", "#FF6868", "#bbee22", "#f8fedb"],
-          },
-          {
-            id: 2,
-            set: ["#FF6868", "#3322f8", "#12dd33", "#8833ff"],
-          },
-          {
-            id: 3,
-            set: ["#eeff88", "#f2f8ee", "#00ff28", "#33ff99"],
-          },
-        ],
-      },
+      color: [],
     };
   }
 
-  // componentDidMount = () => {
-  //   fetch("/data/color.json")
-  //     .then((data) => data.json())
-  //   .then((data) =>
-  //     this.setState({ color: data }, () => {
-  //       console.log(this.state.color);
-  //     })
-  //   );
-  // };
+  componentDidMount = () => {
+    fetch("https://us-central1-learn-frontend-a8f40.cloudfunctions.net/colors")
+      .then((data) => data.json())
+    .then((data) =>
+      this.setState({ color: data })
+    );
+  };
+
   render() {
-    const { sampleColor } = this.state;
+    const { data } = this.state.color;
+    // console.log('data', data)
     return (
       <div className='App'>
         <Nav />
-        <CardList sampleColor={sampleColor} />
+        <CardList data={data} />
       </div>
     );
   }

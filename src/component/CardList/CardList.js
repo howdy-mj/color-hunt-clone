@@ -4,7 +4,8 @@ import "./CardList.scss";
 
 class CardList extends Component {
   render() {
-    const { data } = this.props.sampleColor;
+    const { data } = this.props;
+    console.log('cardlist data', data)
     return (
       <div className='CardList'>
         <Card info={data} />
